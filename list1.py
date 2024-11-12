@@ -1,33 +1,25 @@
-name=['raj','kabir','anuj','harsh','soham']
-print("The intitial list is :")
-print(name)
-print(name[3])
+my_list = [10, 20, 30, 40, 50]
 
-#multidimentional list
-names=[['raj','soham'],['anuj','kabir']]
-print(names[0][1])
-print(names[1][1])
+my_list.append(60)
+my_list.insert(2, 25)
+my_list.remove(40)
+my_list[1] = 15
 
-#print using or loop
-print("\nPrinting of list using for loop")
-for i in name:
-    print(i)
+print("Modified List:", my_list)
 
-#-ve Traversing
-print("\n-ve Traversing")
-print(name[-1])
-print(name[::-1])
 
-#split
-string = ("Rajvardhan Gajanan Ulape")
-l1=string.split()
-print("The list is ",l1)
+print("Length of List:", len(my_list))
+print("Index of 30:", my_list.index(30))
+my_list.sort()
+print("Sorted List:", my_list)
+my_list.reverse()
+print("Reversed List:", my_list)
 
-#append
-name.append("Ruturaj")
-#name.extend(3)
-print(name)
+squared_list = [x**2 for x in my_list]
+print("Squared List:", squared_list)
 
-#insert
-name.insert(3,'sonya')
-print(name)
+new_list = my_list.copy()
+print("Copied List:", new_list)
+
+my_list.clear()
+print("Cleared List:", my_list)

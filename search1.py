@@ -4,8 +4,9 @@ num=int(input("Enter number : "))
 
 i=0
 
-while tup[i<len(tup)]==num :
-    print(tup[i],"is present in the tuple.")
+while i<len(tup):
+    if(tup[i]==num):
+        print(tup[i],"is present in the tuple at",i,"index")
     i += 1
 
 print("End of a code")
